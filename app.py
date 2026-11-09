@@ -147,7 +147,7 @@ if st.button("生成開始", type="primary"):
        
         try:
             response_stream = client.models.generate_content_stream(
-                model="models/gemini-3.1-pro-preview",
+                model="models/gemini-3.1-pro",
                 contents=user_input,
                 config=genai.types.GenerateContentConfig(
                     system_instruction=system_instruction,
